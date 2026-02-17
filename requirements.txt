@@ -1,0 +1,17 @@
+# Core
+Django>=5.2,<6.0
+python-dotenv
+
+# Telegram
+python-telegram-bot==20.*
+
+# Scheduler
+APScheduler>=3.10
+
+# Cache / Redis
+redis>=5.0
+
+# Async utils (використовуються Django + APScheduler)
+asgiref>=3.7
+anyio>=4.0
+httpx>=0.26
