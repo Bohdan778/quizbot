@@ -19,6 +19,8 @@ scheduler_started = False
 @sync_to_async
 def get_available_phrase():
     phrases = Phrase.objects.filter(is_fake=False)
+    if not phrases.exists():
+        return None
 
     available = [
         p for p in phrases
